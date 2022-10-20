@@ -7,4 +7,5 @@
     <string name="Calc">Calculate</string>
     <string name="Title">Basic Calculator</string>
     <string name="ans">Answer</string>
+    <string name="clear" translatable="false">C</string>
 </resources>

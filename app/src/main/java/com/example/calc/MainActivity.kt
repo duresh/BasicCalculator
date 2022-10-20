@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun addNum(view:View){
-        if(editNumber01.text.toString() == "" || editNumber02.text.toString()== ""){
+        if(editNumber01.text.toString().trim().isEmpty() || editNumber02.text.toString().trim().isEmpty()){
             txtAnswer.text = "Please fill all the value fields"
         }
         else{
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
 
 
     fun subsNumbers(view: View){
-        if(editNumber01.text.toString() == "" || editNumber02.text.toString()== ""){
+        if(editNumber01.text.toString().trim().isEmpty() || editNumber02.text.toString().trim().isEmpty()){
             txtAnswer.text = "Please fill all the value fields"
         }
         else{
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun multiNumbers(view: View){
-        if(editNumber01.text.toString() == "" || editNumber02.text.toString()== ""){
+        if(editNumber01.text.toString().trim().isEmpty() || editNumber02.text.toString().trim().isEmpty()){
             txtAnswer.text = "Please fill all the value fields"
         }
         else{
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun diviNumbers(view: View){
-        if(editNumber01.text.toString() == "" || editNumber02.text.toString()== ""){
+        if(editNumber01.text.toString().trim().isEmpty() || editNumber02.text.toString().trim().isEmpty()){
             txtAnswer.text = "Please fill all the value fields"
         }
         else{
@@ -63,6 +63,12 @@ class MainActivity : AppCompatActivity() {
             txtAnswer.text = "$division"
         }
 
+    }
+
+    fun clear(view: View){
+        editNumber01.text.clear()
+        editNumber02.text.clear()
+        txtAnswer.text = "Answer"
     }
 
 }
